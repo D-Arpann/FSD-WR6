@@ -1,0 +1,92 @@
+:root {
+    --ctp-base: #eff1f5;
+    --ctp-mantle: #e6e9ef;
+    --ctp-text: #4c4f69;
+    --ctp-blue: #1e66f5;
+    --ctp-green: #40a02b;
+    --ctp-red: #d20f39;
+    --ctp-surface0: #ccd0da;
+    --ctp-overlay0: #9ca0b0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--ctp-base);
+    color: var(--ctp-text);
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+h2 {
+    color: var(--ctp-blue);
+    border-bottom: 2px solid var(--ctp-surface0);
+    padding-bottom: 0.5rem;
+}
+
+form {
+    background: var(--ctp-mantle);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: var(--ctp-base);
+    border: 1px solid var(--ctp-surface0);
+    color: var(--ctp-text);
+    box-sizing: border-box; 
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--ctp-mantle);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--ctp-surface0);
+}
+
+th {
+    background-color: var(--ctp-surface0);
+    color: var(--ctp-text);
+}
+
+a, button {
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.btn-primary { background-color: var(--ctp-blue); color: white; }
+.btn-edit { background-color: var(--ctp-green); color: white; margin-right: 5px; }
+.btn-delete { background-color: var(--ctp-red); color: white; }
+.btn-back { background-color: var(--ctp-overlay0); color: white; margin-bottom: 15px; }
+
+.message {
+    padding: 10px;
+    background-color: var(--ctp-surface0);
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
